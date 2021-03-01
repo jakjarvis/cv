@@ -90,6 +90,26 @@ body {
   height: 1em;
 }
 
+.timeline-event-icon2 {
+  -moz-transition: -moz-transform 0.2s ease-in;
+  -o-transition: -o-transform 0.2s ease-in;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: white;
+  outline: 10px solid black;
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 1em;
+  height: 1em;
+}
+
 .timeline-event-thumbnail {
   -moz-transition: box-shadow 0.5s ease-in 0.1s;
   -o-transition: box-shadow 0.5s ease-in 0.1s;
