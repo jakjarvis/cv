@@ -1,0 +1,142 @@
+/* Big tablet to small computers */
+@media only screen and (max-width: 1200px) {
+   .timeline {
+        margin: 50px 200px;
+    } 
+}
+
+/* Height of iPad is 1024px so covers range of tablet positions */
+@media only screen and (max-width: 1023px) {
+    
+    .timeline {
+    margin: 50px 100px;
+    } 
+    
+    .skillset {
+    display: flex;
+    margin: 0 20px;
+    text-align: center;
+    }
+}
+
+/* Width of the iPad is 768, so smaller than iPad tablet */
+@media only screen and (max-width: 767px) {
+
+    .name-text span {
+        display: block;
+    }
+    
+    .main-nav { display: none; }
+    .mobile-nav-icon { display: inline-block; }
+    .main-nav {
+        float: left;
+        margin-top: 20px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%
+    }
+    
+    .section-skills {
+        height: 850px;
+    }
+    
+    .skillset {
+        display: block;
+    }
+    
+    .skill-desc {
+        height: 120px;
+    }
+
+    .skill-points {
+        margin-top: 10px;
+    }
+ 
+    .timeline {
+        margin: 50px 50px;
+    } 
+}
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+ 
+    .btn:link, 
+    .btn:visited,
+    input[type=submit] {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 30px;
+        width: 200px;
+        font-weight: 300;
+        text-decoration: none;
+        border-radius: 200px;
+        border: 1px solid #b1b114;
+        transition: background-color 0.2s, border 0.2s, color 0.2s;
+    }
+    
+    .section-about {
+        width: 200px;
+        margin: 100px auto;
+        text-align: center;
+    }
+    
+    .section-about p {
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    .section-skills {
+        height: 1050px;
+    }
+    
+    .section-skills h2 {
+        width: 200px;
+    }
+    
+    .skillset {
+        display: block;
+    }
+    
+    .skill-desc {
+        margin-bottom: 50px;
+    }
+
+    .skill-points {
+        margin-top: 10px;
+    }
+    
+    .timeline {
+        margin: 50px 20px;
+    } 
+    
+    .section-interests {
+        height: 400px;
+    }
+    
+    .section-interests ion-icon {
+        font-size: 200%
+    }
+
+    .top-row ion-icon,
+    .middle-row ion-icon,
+    .bottom-row ion-icon {
+        padding: 20px;
+    }
+
+    .interest-text {
+        width: 150px;
+        font-size: 80%;
+    }
+
+}
+

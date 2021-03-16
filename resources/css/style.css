@@ -1,0 +1,480 @@
+/* green color is #b1b114 */
+
+/* ------------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fafafa;
+    color: #777;
+    font-family: 'Raleway', 'Arial', 'sans-serif';
+    font-weight: 300;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+/* ------------------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------ */
+
+/* ------ HEADINGS ---- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 300%;
+    font-family: 'Josefin Sans';
+    color: #fff;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    padding: 10px 0;
+}
+
+h3 {
+    font-size: 140%;
+}
+
+h4 {
+    font-size: 120%;
+}
+
+h5 {
+    font-size: 100%;
+    padding: 5px 0;
+}
+
+
+/* ------ PARAGRAPHS ------ */
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+
+/* ------ GENERIC LINKS ------ */
+
+a:link,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #fff;
+    border-bottom: 1px solid #b1b114;
+}
+
+/* ------ BUTTONS ------ */
+
+.btn:link, 
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid #b1b114;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #b1b114;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: #fff;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #b1b114;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
+    border: 1px solid #b1b114;
+}
+
+/* ------------------------------------ */
+/* HEADER */
+/* ------------------------------------ */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/soundproof-min.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.name-text {
+    position: absolute;
+    width: 100vw;
+    top: 40%;
+    text-align: center;
+}
+
+.profile-pic {
+    height: 50px;
+    width: auto;
+    float: left;
+    border-radius: 25px;
+    margin: 10px 0;
+}
+
+.linked-icon,
+.github-icon {
+    margin-top: 20px;
+    margin-left: 10px;
+    float: left;
+    font-size: 200%
+}
+
+.linked-icon:hover,
+.linked-icon:active {
+    color: #0077b5;
+    border-bottom: 1px solid transparent;
+}
+
+.github-icon:hover,
+.github-icon:active {
+    color: #6e5494;
+    border-bottom: 1px solid transparent;
+}
+
+header p {
+    color: #fff;
+    padding: 10px 0px 30px 0px;
+}
+
+header span {
+    padding: 0 10px;
+}
+
+/* Main Navi */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+/* -------------------------------- */
+/* ABOUT ME */
+/* -------------------------------- */
+
+.section-about {
+    width: 400px;
+    margin: 150px auto;
+}
+
+.section-about p {
+    padding: 10px 0;
+    text-align: justify;
+}
+
+
+/* -------------------------------- */
+/* SKILLS */
+/* -------------------------------- */
+
+.section-skills {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(img/black-waves-min.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    background-attachment: fixed;
+    color: #b4b4b4;
+}
+
+.section-skills .row {
+    padding: 0px;
+    margin: auto;
+}
+
+.section-skills h2 {
+    width: 400px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #777;
+}
+
+.section-skills p {
+    padding-bottom: 10px;
+}
+
+.skillset {
+    display: flex;
+    margin: 0 100px;
+    text-align: center;
+}
+
+.skillset ion-icon {
+    font-size: 250%;
+}
+
+.leadership {
+    flex: 0 0 35%;
+    padding: 20px;
+}
+
+.data-tech {
+    flex: 0 0 30%;
+    padding: 20px;
+}
+
+.engineering {
+    flex: 0 0 35%;
+    padding: 20px;
+}
+
+.skill-desc {
+    height: 150px;
+}
+
+.skill-points {
+    margin-top: 10px;
+}
+
+
+/* -------------------------------- */
+/* TIMELINE */
+/* -------------------------------- */
+
+/* Variables */
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+
+
+/* Styling */
+.timeline {
+    margin: 50px 300px;
+    position: relative;
+    list-style-type: none;
+}
+
+.timeline:before {
+    background-color: black;
+    content: '';
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 2px;
+    height: 100%;
+}
+
+.timeline-event {
+    position: relative;
+}
+
+.timeline-event:hover .timeline-event-icon {
+    transform: rotate(-45deg);
+    background-color: #b1b114;
+}
+
+.timeline-event:hover .timeline-event-icon2 {
+    transform: rotate(-45deg);
+    outline: 10px solid #b1b114;
+}
+
+.timeline-event:hover .timeline-event-thumbnail {
+    box-shadow: inset 40em 0 0 0 #b1b114;
+}
+
+.timeline-event-copy {
+    padding: 2em 0 2em 2em;
+    position: relative; 
+    top: -1.875em;
+    left: 4em;
+    width: 80%;
+}
+.timeline-event-copy h3 {
+    padding: 10px 0;
+}
+.timeline-event-copy h4 {
+    margin-bottom: 1.2em;
+}
+.timeline-event-copy strong {
+    font-weight: 700;
+}
+.timeline-event-copy p:not(.timeline-event-thumbnail) {
+    padding-bottom: 1em;
+}
+
+.timeline-event-icon {
+    transition: transform 0.2s ease-in;
+    transform: rotate(45deg);
+    background-color: black;
+    outline: 10px solid white;
+    display: block;
+    margin: 0.5em 0.5em 0.5em -0.5em;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 1em;
+    height: 1em;
+}
+
+.timeline-event-icon2 {
+  transition: transform 0.2s ease-in;
+  transform: rotate(45deg);
+  background-color: white;
+  outline: 10px solid black;
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 1em;
+  height: 1em;
+}
+
+.timeline-event-thumbnail {
+    transition: box-shadow 0.5s ease-in 0.1s;
+    color: white;
+    font-size: 0.75em;
+    background-color: black;
+    box-shadow: inset 0 0 0 0em #777;
+    display: inline-block;
+    margin-bottom: 1.2em;
+    padding: 0.25em 1em 0.2em 1em;
+}
+
+
+
+/* -------------------------------- */
+/* INTERESTS */
+/* -------------------------------- */
+
+.section-interests h2 {
+    width: 50vw;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #777;
+}
+
+.section-interests {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(img/plane-min.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    background-attachment: fixed;
+    color: #b4b4b4;
+    text-align: center
+}
+
+.section-interests ion-icon {
+    font-size: 300%
+}
+
+.top-row,
+.bottom-row {
+    display: flex;
+    text-align: center;
+    justify-content: center
+}
+
+.top-row ion-icon,
+.middle-row ion-icon,
+.bottom-row ion-icon {
+    padding: 50px;
+}
+
+.middle-row {
+    display: flex;
+    justify-content: center
+}
+
+.interest-text {
+    width: 200px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.fly-icon:hover {
+    
+}
+
+/* -------------------------------- */
+/* FOOTER */
+/* -------------------------------- */
+
+footer {
+    background-color: #b1b114;
+    color: #fff;
+}
+
+.footer-icons {
+    float: right;
+    font-size: 150%;
+}
