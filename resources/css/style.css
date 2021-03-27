@@ -307,6 +307,128 @@ header span {
 
 
 /* -------------------------------- */
+/* QUALIFICATIONS */
+/* -------------------------------- */
+
+.section-qualifications {
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+
+.section-qualifications h2 {
+    width: 400px;
+    margin: 50px auto 50px auto;
+    text-align: center;
+    border-bottom: 1px solid #777;
+}
+
+.qualifications {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.in-person {
+    flex: 0 0 30%;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 10px;
+    width: auto;
+}
+
+.in-person a,
+.online a {
+    font-size: 17px;
+    color: #777;
+}
+
+.in-person li,
+.online li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.online {
+    flex: 0 0 30%;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+.window {
+    display: flex;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #b4b4b4;
+}
+
+.qualification-info {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 200px;
+}
+
+#institute {
+    width: 100px;
+    background-size: 200px;
+    background-position: left, top;
+    background-attachment: scroll;
+    border-top-left-radius: 40px;
+    height: 100px;
+    width: 200px;
+    color: #b4b4b4;
+}
+
+#institute.msc { background-image: url(img/institutions/uwe.png); }
+#institute.meng { background-image: url(img/institutions/uos.png); }
+#institute.ceng { background-image: url(img/institutions/ec.png); }
+#institute.mraes { background-image: url(img/institutions/raes.png); }
+#institute.atbs { background-image: url(img/institutions/udemy.png); }
+#institute.htcss { background-image: url(img/institutions/udemy.png); }
+#institute.agile { background-image: url(img/institutions/edx.png); }
+
+#description {
+    font-size: 15px;
+}
+
+#description.msc p:after { content: "Taken part time alongside work. Graduated with distinction."; }
+#description.meng p:after { content: "Specialisation in Aeromechanics. Graduated with 1st class Honours."; }
+#description.ceng p:after { content: "Approved by UK Engineering Council, sponsored by the Royal Aeronautical Society."; }
+#description.mraes p:after { content: "Full Membership to Royal Aeronautical Society."; }
+#description.atbs p:after { content: "9.5 hour python basics course by Al Sweigert."; }
+#description.htcss p:after { content: "12 hour html, css and jquery course by Jonas Schmedtmann."; }
+#description.agile p:after { content: "6 week part-time Agile course by Rolls-Royce."; }
+
+#certificate {
+    border-color: #b4b4b4;
+    background-size: auto 200px;
+    background-position: left;
+    padding-left: 5px; 
+    border-left: solid;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    height: 200px;
+    width: 200px;
+    color: #b4b4b4;
+}
+
+#certificate:hover {
+    transform: scale(3);
+}
+
+#certificate.msc { background-image: url(img/qualifications/uwe_watermark-min.jpg); }
+#certificate.meng { background-image: url(img/qualifications/uos_watermark-min.jpg); }
+#certificate.ceng { background-image: url(img/qualifications/ceng_watermark-min.jpg); }
+#certificate.mraes { background-image: url(img/qualifications/raes_watermark-min.jpg); }
+#certificate.atbs { background-image: url(img/digital/automate_watermark-min.jpg); }
+#certificate.htcss { background-image: url(img/digital/html_watermark-min.jpg); }
+#certificate.agile { background-image: url(img/digital/agile_watermark-min.jpg); }
+
+
+/* -------------------------------- */
 /* TIMELINE */
 /* -------------------------------- */
 
@@ -314,6 +436,12 @@ header span {
 /* Fonts */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
 
+.section-timeline h2 {
+    width: 400px;
+    margin: 50px 0 50px 120px;
+    text-align: left;
+    border-bottom: 1px solid #777;
+}
 
 /* Styling */
 .timeline {

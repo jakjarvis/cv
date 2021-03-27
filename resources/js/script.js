@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     /* Scroll on button */
     
-    $('.js--scroll-to-start').click(function () {
+    $('.js--scroll-to-start').click(function() {
        $('html, body').animate({scrollTop: $('.js--section-about').offset().top}, 1000); 
     });
     
@@ -25,6 +25,28 @@ $(document).ready(function() {
                 }
             }
         });
+    });
+    
+    /* Qualification clicks */
+    
+    /*$( ".js--msc" ).click(function() {
+        
+        nav.slideToggle(200);
+        
+        if ($('.js--uwe-logo').hasClass('.institute-hidden')) {
+            $('.js--uwe-logo').removeClass('.institute-hidden');
+            $('.js--uwe-logo').addClass('.institute-showing');
+        }
+        
+         if ($('.js--uos-logo').hasClass('.institute-showing')) {
+            $('.js--uos-logo').removeClass('.institute-showing');
+        }
+    })*/
+    
+    $(".qualifications ul a").hover(function() {
+        $("#institute").removeClass().addClass($(this).attr('rel'));
+        $("#certificate").removeClass().addClass($(this).attr('rel'));
+        $("#description").removeClass().addClass($(this).attr('rel'));
     });
     
     /* Interests hovers */
