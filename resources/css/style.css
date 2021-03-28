@@ -437,8 +437,7 @@ header span {
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
 
 .section-timeline h2 {
-    width: 400px;
-    margin: 50px 0 50px 120px;
+    margin: 50px 300px;
     text-align: left;
     border-bottom: 1px solid #777;
 }

@@ -2,12 +2,20 @@
 @media only screen and (max-width: 1200px) {
    .timeline {
         margin: 50px 200px;
-    } 
+    }
+    
+    .section-timeline h2 {
+        margin: 50px 200px;
+    }
 }
 
 /* Height of iPad is 1024px so covers range of tablet positions */
 @media only screen and (max-width: 1023px) {
     
+    .section-timeline h2 {
+        margin: 50px 100px;
+    }
+        
     .timeline {
         margin: 50px 100px;
     } 
@@ -92,9 +100,14 @@
         transform: scale(2);
     }
  
+    .section-timeline h2 {
+        margin: 50px 50px;
+    }
+    
     .timeline {
         margin: 50px 50px;
-    } 
+    }
+    
 }
 
 
@@ -146,6 +159,10 @@
         margin-top: 10px;
     }
     
+    .section-qualifications h2 {
+    width: 220px;
+    }
+    
     .window {
         flex-direction: column;
         width: 220px;
@@ -174,6 +191,10 @@
         border-top-right-radius: 0px;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
+    }
+    
+    .section-timeline h2 {
+        margin: 50px 20px;
     }
     
     .timeline {
