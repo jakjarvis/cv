@@ -351,7 +351,7 @@ header span {
 .online {
     flex: 0 0 30%;
     text-align: left;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 10px;
 }
 
@@ -389,6 +389,7 @@ header span {
 #institute.atbs { background-image: url(img/institutions/udemy.png); }
 #institute.htcss { background-image: url(img/institutions/udemy.png); }
 #institute.agile { background-image: url(img/institutions/edx.png); }
+#institute.pmp { background-image: url(img/institutions/pmi.png); }
 
 #description {
     font-size: 15px;
@@ -401,6 +402,8 @@ header span {
 #description.atbs p:after { content: "9.5 hour python basics course by Al Sweigert."; }
 #description.htcss p:after { content: "12 hour html, css and jquery course by Jonas Schmedtmann."; }
 #description.agile p:after { content: "6 week part-time Agile course by Rolls-Royce."; }
+#description.pmp p:after { content: "Accredited Project Management Professional."; }
+
 
 #certificate {
     border-color: #b4b4b4;
@@ -426,6 +429,7 @@ header span {
 #certificate.atbs { background-image: url(img/digital/automate_watermark-min.jpg); }
 #certificate.htcss { background-image: url(img/digital/html_watermark-min.jpg); }
 #certificate.agile { background-image: url(img/digital/agile_watermark-min.jpg); }
+#certificate.pmp { background-image: url(img/qualifications/pmp_watermark-min.jpg); }
 
 
 /* -------------------------------- */
