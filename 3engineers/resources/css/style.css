@@ -15,7 +15,7 @@ html,
 body {
     background-color: #fff;
     color: #000000;
-    font-family: 'Agency FB', arial;
+    font-family: "Roboto Condensed";
     font-size: 20px;
 }
 
@@ -28,12 +28,16 @@ body {
 /* ------ HEADINGS ---- */
 
 .row {
-    max-width: 1140px;
+    max-width: 1340px;
     margin: 0 auto;
 }
 
 h1 {
     font-size: 300%;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Agency FB', arial;    
 }
 
 /* ------ GENERIC LINKS ------ */
@@ -101,21 +105,26 @@ header {
     color: #ededed;
 }
 
+.nav-bar {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
 .nav-logo {
-    height: 80px;
+    height: 15vh;
     width: auto;
     float: left;
     border-radius: 25px;
-    margin: 10px 10px;
 }
 
 /* Main Navi */
 .main-nav {
-    float: left;
+    display: inline-block;
+    float: right;
     list-style: none;
-    margin-top: 25px;
-    margin-right: 20px;
     text-shadow: 4px 4px 4px #aaa;
+    margin-left: auto;
 }
 
 .main-nav li {
@@ -136,6 +145,7 @@ header {
     margin-top: 30px;
     margin-right: 20px;
     cursor: pointer;
+    display: none;
 }
 
 .mobile-nav-icon ion-icon {
@@ -147,24 +157,28 @@ header {
 .front-page {
     position: relative;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    height: 70vh;
 }
 
 .tagline {
-    margin-top: 150px;
     display: block;
     float:left;
+    margin-left: 5vh;
 }
 
 .shop-btn {
-    margin-top: 50px;
+    margin-top: 64px;
     margin-left: 100px;
 }
 
 .slider-container {
     display: block;
     float: right;
-    margin-top: 50px;
-    width: 400px;
+    margin-left: auto;
+    margin-right: 5vh;
+    width: 64vh;
     overflow: hidden;
 }
 
@@ -172,7 +186,7 @@ header {
     position: absolute;
 }
 
-.cog img { width: 400px; float: left; }
+.cog img { width: 64vh; float: left; }
     
 .cog {
     animation-name: spin;
@@ -191,14 +205,14 @@ header {
 }
 
 .slider {
-    height: 400px;
-    width: 2800px;
+    height: 64vh;
+    width: 448vh;
 }
 
 .slider img { 
-    width: 300px; 
+    width: 48vh; 
     float: left;
-    margin: 50px;
+    margin: 8vh;
 }
 
 .slider {
@@ -213,7 +227,7 @@ header {
         margin-left: 0px;
     }
     to {
-        margin-left: -2800px;
+        margin-left: -448vh;
     }
 }
 
@@ -259,27 +273,47 @@ header {
 .section-beers {
     padding: 0;
     background-image: url(img/nikola-jovanovic-pub.jpg);
-    height: 700px;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.gear-mesh {
+    width: 118vh;
 }
 
 .beers-showcase {
+    position: absolute;
     list-style: none;
-    width: 100%;
+    width: 100vw;
+}
+
+.beers-top {
+    margin-top: 4vh;
+}
+
+.beers-middle {
+    margin-left: 26vh;
+    margin-top: 30vh;
+}
+
+.beers-bottom {
+    margin-top: 56vh;
 }
 
 .beers-showcase li {
     display: block;
     float: left;
-    width: 33%;
+    margin-right: 4vh;
 }
 
 .beer-image {
     position: relative;
-    width = 100%;
-    margin: 0 40px;
+    width: 40vh;
+    margin: 0 4vh;
     overflow: hidden;
 }
 
@@ -292,7 +326,6 @@ header {
 
 .beer-image:hover img {
     opacity: 0.5;
-    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -300,8 +333,8 @@ header {
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 10%;
-    left: 0;
+    top: 5.5%;
+    left: 6.5%;
     background: black;
     color: white;
     margin-bottom: 5px;
@@ -316,10 +349,12 @@ header {
 }
 
 .beer-image:hover div {
-    width: 100%;
-    height: 80%;
+    display: flex;
+    align-items: center;
+    width: 86%;
+    height: 86%;
     margin: auto;
-    border-radius: 20px;
+    border-radius: 20vh;
     padding: 8px 15px;
     visibility: visible;
     opacity: 0.7;
@@ -334,11 +369,11 @@ header {
     background-color: #fff;
     text-align: center;
     height: 400px;
-    margin: 25px 10px;
+    margin: 100px 10px;
 }
 
 .section-news h2 {
-    padding: 20px; 180px;
+    padding-bottom: 20px;
 }
 
 .news-text {
@@ -375,45 +410,71 @@ header {
 
 .section-mates {
     background-color: #ededed;
-    height: 130vh;
     text-align: center;
+    padding: 50px 0;
+    height: auto;
 }
 
 .section-mates h2 {
-    padding: 20px;
+    height: 5vw;
+}
+
+.pubs-gallery {
+    width: 95vw;
+    margin: auto;
+}
+
+.pub-box {
+    display: block;
+    float: left;
+    width: 18vw;
+    height: auto;
+    margin: 0.5vw;
 }
 
 .mates-gallery {
-    width: 92vw;
+    width: 94vw;
     margin: auto;
+    display: flex;
+    align-items: center;
 }
 
 .mate-box {
     display: block;
     float: left;
-    width: 23vw;
+    width: 12vw;
     height: auto;
+    margin: 0.5vw;
 }
 
-.mate-box img {
+.box img {
     width: 100%;
+    cursor: pointer;
 }
 
+.pub-box .pub-text {
+    width: 18vw;
+    font-size: 80%;
+}
+    
 .mate-box .mate-text {
+    width: 12vw;
+    font-size: 60%;
+}
+
+.box .text {
     visibility: hidden;
-    width: 23vw;
     background-color: #fff;
     color: black;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    cursor: pointer;
-    
+    cursor: pointer;  
     position: absolute;
     z-index: 1;
 }
 
-.mate-box:hover .mate-text {
+.box:hover .text {
     visibility: visible;
 }
 

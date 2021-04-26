@@ -30,7 +30,7 @@
     <body>
         <header>
             <nav>
-                <div class="row">
+                <div class="row nav-bar">
                     <img src="resources/img/logo-inv.png" alt="Logo" class="nav-logo">
                     <ul class="main-nav js--main-nav">
                         <li><a href="#about">About us</a></li>
@@ -42,7 +42,7 @@
                     <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu-outline"></ion-icon></a>
                 </div>        
             </nav>
-            <div class="front-page">
+            <div class="row front-page">
                 <div class="tagline">
                     <h1>For the Best Beer...<br>Call an Engineer!</h1>
                     <a class="btn shop-btn" href="https://three-engineers-brewery.square.site/">Buy Beer!</a>
@@ -77,58 +77,62 @@
         </section>
         
         <section class="section-beers" id="beers">
-            <ul class="beers-showcase">
-                <li>
-                    <figure class="beer-image">
-                        <img src="resources/img/beluga-trans.png" alt="Beluga Wheat IPA">
-                        <div>
-                            <p>A unique mix between an IPA and wheat beer. The grain bill is a 50/50 split between classic English malts and German Wheat Malt. Bittered with Goldings and subtle fruity flavours delivered from Belgian and New Zealand hops.</p>
-                        </div>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="beer-image">
-                        <img src="resources/img/corsair-trans.png" alt="Corsair American Pale Ale">
-                        <div>
-                            <p>A session pale ale with a mellow and fruity hop character. Dry hopped with Citra hops to add aromas of tropical fruit.</p>
-                        </div>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="beer-image">
-                        <img src="resources/img/gladiator-trans.png" alt="Gladiator Best Bitter">
-                        <div>
-                            <p>A classic British bitter. A rich malty flavour with a hint of sweetness from a small addition of Belgian malt.</p>
-                        </div>
-                    </figure>
-                </li>
-            </ul>
-            <ul class="beers-showcase">
-                <li>
-                    <figure class="beer-image">
-                        <img src="resources/img/mosquito-trans.png" alt="Mosquito Porter">
-                        <div>
-                            <p>A dark and seriously smooth porter with a rich malty flavour with hints of Belgian malts. Bittered with classic English malts.</p>
-                        </div>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="beer-image">
-                        <img src="resources/img/mustang-trans.png" alt="Mustang Triple Hopped IPA">
-                        <div>
-                            <p>A seriously hoppy IPA with bags of character from Citra  hops. Dry hopped multiple times to  give a bold aroma and flavour of citrus fruit.</p>
-                        </div>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="beer-image">
-                        <img src="resources/img/vulcan-trans.png" alt="Vulcan British Pale Ale">
-                        <div>
-                            <p>A heavily hopped British pale ale. Using Marris Otter malt for a pale colour and bittered using Fuggles hops to give a refreshing session pale ale.</p>
-                        </div>
-                    </figure>
-                </li>
-            </ul>
+            <div class="gear-mesh">
+                <ul class="beers-showcase beers-top">
+                    <li>
+                        <figure class="beer-image">
+                            <img src="resources/img/beluga-trans.png" alt="Beluga Wheat IPA">
+                            <div>
+                                <p>A unique mix between an IPA and wheat beer. The grain bill is a 50/50 split between classic English malts and German Wheat Malt. Bittered with Goldings and subtle fruity flavours delivered from Belgian and New Zealand hops.</p>
+                            </div>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="beer-image">
+                            <img src="resources/img/corsair-trans.png" alt="Corsair American Pale Ale">
+                            <div>
+                                <p>A session pale ale with a mellow and fruity hop character. Dry hopped with Citra hops to add aromas of tropical fruit.</p>
+                            </div>
+                        </figure>
+                    </li>
+                </ul>
+                <ul class="beers-showcase beers-middle">
+                    <li>
+                        <figure class="beer-image">
+                            <img src="resources/img/gladiator-trans.png" alt="Gladiator Best Bitter">
+                            <div>
+                                <p>A classic British bitter. A rich malty flavour with a hint of sweetness from a small addition of Belgian malt.</p>
+                            </div>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="beer-image">
+                            <img src="resources/img/mosquito-trans.png" alt="Mosquito Porter">
+                            <div>
+                                <p>A dark and seriously smooth porter with a rich malty flavour with hints of Belgian malts. Bittered with classic English malts.</p>
+                            </div>
+                        </figure>
+                    </li>
+                </ul>
+                <ul class="beers-showcase beers-bottom">
+                    <li>
+                        <figure class="beer-image">
+                            <img src="resources/img/mustang-trans.png" alt="Mustang Triple Hopped IPA">
+                            <div>
+                                <p>A seriously hoppy IPA with bags of character from Citra  hops. Dry hopped multiple times to  give a bold aroma and flavour of citrus fruit.</p>
+                            </div>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="beer-image">
+                            <img src="resources/img/vulcan-trans.png" alt="Vulcan British Pale Ale">
+                            <div>
+                                <p>A heavily hopped British pale ale. Using Marris Otter malt for a pale colour and bittered using Fuggles hops to give a refreshing session pale ale.</p>
+                            </div>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
         </section>
         
         <section class="section-news" id="news">
@@ -152,55 +156,56 @@
         
         <section class="section-mates" id="mates">
             <h2>Mates</h2>
-            <div class="mates-gallery">
-                <div class="mate-box" id="mate-drapers">
-                    <span class="mate-text">The Drapers Arms: Independent alehouse, providing a relaxed and sociable atmosphere. Sells real ale and traditional cider, straight from the cask, sourced from small independent producers.<br>447 Gloucester Rd, Bristol BS7 8TZ</span>
+            <div class="pubs-gallery">
+                <div class="box pub-box" id="mate-drapers">
+                    <span class="text pub-text">The Drapers Arms: Independent alehouse, providing a relaxed and sociable atmosphere. Sells real ale and traditional cider, straight from the cask, sourced from small independent producers.<br>447 Gloucester Rd, Bristol BS7 8TZ</span>
                     <img href="https://www.thedrapersarms.co.uk/" target=”_blank” src="resources/img/drapers-800-1.jpeg" alt="Drapers Arms">
                 </div>
-                <div class="mate-box" id="mate-snuffy">
-                    <span class="mate-text">Snuffy Jacks: A community spirited independent Micropub focussing mainly on real ale from gravity but with some real cider, craft gin and a small wine selection.<br>800, Fishponds Road, Bristol BS16 3TE</span>
+                <div class="box pub-box" id="mate-snuffy">
+                    <span class="text pub-text">Snuffy Jacks: A community spirited independent Micropub focussing mainly on real ale from gravity but with some real cider, craft gin and a small wine selection.<br>800, Fishponds Road, Bristol BS16 3TE</span>
                     <img href ="https://snuffy-jacks-ale-house-micropub.business.site/?fbclid=IwAR1bHSbp8G4XeOPnuqs8V35SsuSZ76EKLouvQz-mI8q1OKCsNPXYgdQjwYk" target=”_blank” src="resources/img/snuffy-800-1.jpg" alt="Snuffy Jacks">
                 </div>
-                <div class="mate-box" id="mate-pear">
-                    <span class="mate-text">The Pear Tree: Cosy log fire, real ale from micro breweries.<br>6 Wotton Road, Charfield GL12 8TP.</span>
+                <div class="box pub-box" id="mate-pear">
+                    <span class="text pub-text">The Pear Tree: Cosy log fire, real ale from micro breweries.<br>6 Wotton Road, Charfield GL12 8TP.</span>
                     <img href ="https://www.tripadvisor.ie/Restaurant_Review-g186295-d1783451-Reviews-The_Pear_Tree-Wotton_under_Edge_Stroud_District_Cotswolds_England.html" target=”_blank” src="resources/img/pear-tree-800-1.jpg" alt="The Pear Tree">
                 </div>
-                <div class="mate-box" id="mate-camra">
-                    <span class="mate-text">CAMRA: Including the newsletter  "Pints West". Promoting beer since men had beards.</span>
-                    <img href ="http://www.camrabristol.org.uk/" target=”_blank” src="resources/img/camra-800-1.jpg" alt="CAMRA">
-                </div>
-
-                <div class="mate-box" id="mate-phil">
-                    <span class="mate-text">Phil Kerswell:  Some media guy we met on the way. Journalist, TV director, and writer. Built the website, so he can't be all bad.<br>www.philkerswell.uk</span>
-                    <img href ="http://www.philkerswell.uk/" target=”_blank” src="resources/img/phil-800-1.jpg" alt="Phil Kerswell">
-                </div>
-                <div class="mate-box" id="mate-rob">
-                    <span class="mate-text">Rob: Another engineer! He did all the amazing graphics.  His band SuperNova are a pure 1990’s BritPop tribute band available to hire for private parties, weddings and pubs around the Bristol area. Playing top drawer tunes from The Stone Roses, Blur, Pulp, The Charlatans, Oasis etc</span>
-                    <img href ="https://www.facebook.com/supernovabristol/" target=”_blank” src="resources/img/supernova-800-1.jpg" alt="Supernova">
-                </div>
-                <div class="mate-box" id="mate-star">
-                    <span class="mate-text">The Star: Recently refurbished pub with community feel, live music and great beers.<br>539 Fishponds Rd,  Fishponds, Bristol BS16 3AF</span>
-                    <img href ="https://www.facebook.com/groups/thestarfishponds/" target=”_blank” src="resources/img/star.jpg" alt="The Star">
-                </div>
-                <div class="mate-box" id="mate-masons">
-                    <span class="mate-text">The Masons Arms: Traditional Family and Dog friendly village pub. Enclosed rear garden, Real Ales &amp; West Country Ciders. Live Sky Sports.<br>North Road Winterbourne BS36 1PT</span>
+                <div class="box pub-box" id="mate-masons">
+                    <span class="text pub-text">The Masons Arms: Traditional Family and Dog friendly village pub. Enclosed rear garden, Real Ales &amp; West Country Ciders. Live Sky Sports.<br>North Road Winterbourne BS36 1PT</span>
                     <img href ="https://www.facebook.com/themasonspub/" target=”_blank” src="resources/img/masons-800.jpg" alt="Masons Pub">
                 </div>
-                <div class="mate-box" id="mate-siba">
-                    <img href ="https://www.siba.co.uk/" target=”_blank” src="resources/img/siba-500-1.png" alt="SIBA">
-                    <span class="mate-text">SIBA: The Society of Independent Brewers. We're among many UK craft breweries who are affiliated to this organisation. Their vision is to deliver the future of British beer and become the voice of British brewing.<br>www.siba.co.uk</span>
+                <div class="box pub-box" id="mate-star">
+                    <span class="text pub-text">The Star: Recently refurbished pub with community feel, live music and great beers.<br>539 Fishponds Rd,  Fishponds, Bristol BS16 3AF</span>
+                    <img href ="https://www.facebook.com/groups/thestarfishponds/" target=”_blank” src="resources/img/star.jpg" alt="The Star">
                 </div>
-                <div class="mate-box" id="mate-mosquito">
-                    <span class="mate-text">The People's Mosquito: A charity aiming to bring this   incredible WW2 plane back to British skies.<br>To Fly - To Educate- To Remember.<br>Twinned with our Mosquito Porter.<br>www.peoplesmosquito.org.uk</span>
+            </div>
+            <div class="mates-gallery">
+                <div class="box mate-box" id="mate-phil">
+                    <span class="text mate-text">Phil Kerswell:  Some media guy we met on the way. Journalist, TV director, and writer. Built the website, so he can't be all bad.<br>www.philkerswell.uk</span>
+                    <img href ="http://www.philkerswell.uk/" target=”_blank” src="resources/img/phil-800-1.jpg" alt="Phil Kerswell">
+                </div>
+                <div class="box mate-box" id="mate-rob">
+                    <span class="text mate-text">Rob: Another engineer! He did all the amazing graphics.  His band SuperNova are a pure 1990’s BritPop tribute band available to hire for private parties, weddings and pubs around the Bristol area. Playing top drawer tunes from The Stone Roses, Blur, Pulp, The Charlatans, Oasis etc</span>
+                    <img href ="https://www.facebook.com/supernovabristol/" target=”_blank” src="resources/img/supernova-800-1.jpg" alt="Supernova">
+                </div>
+                <div class="box mate-box" id="mate-siba">
+                    <span class="text mate-text">SIBA: The Society of Independent Brewers. We're among many UK craft breweries who are affiliated to this organisation. Their vision is to deliver the future of British beer and become the voice of British brewing.<br>www.siba.co.uk</span>
+                    <img href ="https://www.siba.co.uk/" target=”_blank” src="resources/img/siba-500-1.png" alt="SIBA">
+                </div>
+                <div class="box mate-box" id="mate-mosquito">
+                    <span class="text mate-text">The People's Mosquito: A charity aiming to bring this   incredible WW2 plane back to British skies.<br>To Fly - To Educate- To Remember.<br>Twinned with our Mosquito Porter.<br>www.peoplesmosquito.org.uk</span>
                     <img href ="https://www.peoplesmosquito.org.uk/" target=”_blank” src="resources/img/peoples-mosquito.png" alt="Peoples Mosquito">
                 </div>
-                <div class="mate-box" id="mate-fire">
-                    <span class="mate-text">Frampton Fire - Pizza delivery: Fantastic stone baked artisan pizza delivery in Frampton Cotterell &amp; Coalpit Heath. Event catering. Pizza parties. In-home cooking.</span>
+                <div class="box mate-box" id="mate-fire">
+                    <span class="text mate-text">Frampton Fire - Pizza delivery: Fantastic stone baked artisan pizza delivery in Frampton Cotterell &amp; Coalpit Heath. Event catering. Pizza parties. In-home cooking.</span>
                     <img href ="https://www.facebook.com/FramptonFire/" target=”_blank” src="resources/img/frampton-fire-logo--250-1.jpg" alt="Frampton Fire">
                 </div>
-                <div class="mate-box" id="mate-barn">
-                    <span class="mate-text">Winterbourne Medieval Barn Trust: Our home. Built nearly 700 years ago, undergoing conservation work to turn it into a  community resource. Our brewery is in one of the workshops.<br>https://www.winterbournebarn.org.uk/</span>
-                    <img href ="https://www.winterbournebarn.org.uk/" target=”_blank” src="resources/img/med-barn-800-1.png" alt="Winterbourne Medieval Barn">
+                <div class="box mate-box" id="mate-camra">
+                    <span class="text mate-text">CAMRA: Including the newsletter  "Pints West". Promoting beer since men had beards.</span>
+                    <img href ="http://www.camrabristol.org.uk/" target=”_blank” src="resources/img/camra-800-1.jpg" alt="CAMRA">
+                </div>
+                <div class="box mate-box" id="mate-barn">
+                    <span class="text mate-text">Winterbourne Medieval Barn Trust: Our home. Built nearly 700 years ago, undergoing conservation work to turn it into a  community resource. Our brewery is in one of the workshops.<br>https://www.winterbournebarn.org.uk/</span>
+                    <img href ="https://www.winterbournebarn.org.uk/" target=”_blank” src="resources/img/med-barn-800-2.png" alt="Winterbourne Medieval Barn">
                 </div>
             </div>
         </section>
@@ -215,6 +220,13 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script>
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="LOrQL7ij"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2R5ZLZHJQ4"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2R5ZLZHJQ4');
+        </script>
         
     </body>
     

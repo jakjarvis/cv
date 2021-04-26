@@ -1,0 +1,19 @@
+/* Big tablet to small computers */
+@media only screen and (max-width: 1200px) {
+    
+}
+
+/* Height of iPad is 1024px so covers range of tablet positions */
+@media only screen and (max-width: 1023px) {
+    
+}
+
+/* Width of the iPad is 768, so smaller than iPad tablet */
+@media only screen and (max-width: 767px) {
+    
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    
+}
