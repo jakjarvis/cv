@@ -1,0 +1,111 @@
+<div class="slick-list draggable" style="overflow:hidden" tabindex="0">
+                    <div class="slick-track" style="opacity: 1; width: 2664px;">
+                        <div class="slick-slide slick-active" index="0" style="width: 296px; position: relative; left: 0px; top: 0px; z-index: 1000; opacity: 1; transition: opacity 1750ms linear 0s;">
+                            <picture class="s33">
+                                <source srcset="resources/img/beluga.png">
+                                <img class="slide0 s34" src="images/3e-logo-198.jpeg">
+                            </picture>
+                        </div>
+                        <div class="slick-slide" index="1" style="width: 296px; position: relative; left: -296px; top: 0px; z-index: 800; opacity: 0;">     
+                            <picture class="s33">
+                                <source media="(max-width:959px)" srcset="images/beluga-pump-clip-195.png 1x, images/beluga-pump-clip-391.png 2x">
+                                <source media="(min-width:960px)" srcset="images/beluga-pump-clip-486-1.png 1x, images/beluga-pump-clip-972-1.png 2x">
+                                <img class="slide1 s35" src="images/beluga-pump-clip-195.png" style="opacity: 1;">
+                            </picture>
+                        </div>
+                        <div class="slick-slide" index="2" style="width: 296px; position: relative; left: -592px; top: 0px; z-index: 800; opacity: 0;">
+                            <picture class="s33">
+                                <source media="(max-width:959px)" srcset="images/tmp_trans_5417x5417-196.png 1x, images/tmp_trans_5417x5417-392.png 2x">
+                                <source media="(min-width:960px)" srcset="images/tmp_trans_5417x5417-486-1.png 1x, images/tmp_trans_5417x5417-972-1.png 2x">
+                                <img class="slide2 s36" src="images/tmp_trans_5417x5417-196.png" style="opacity: 1;">
+                            </picture>
+                        </div>
+                        <div class="slick-slide" index="3" style="width: 296px; position: relative; left: -888px; top: 0px; z-index: 800; opacity: 0;">
+                            <picture class="s33">
+                                <source media="(max-width:959px)" srcset="images/mosquito-pump-clip-195.png 1x, images/mosquito-pump-clip-391.png 2x">
+                                <source media="(min-width:960px)" srcset="images/mosquito-pump-clip-486-1.png 1x, images/mosquito-pump-clip-972-1.png 2x">
+                                <img class="slide3 s35" src="images/mosquito-pump-clip-195.png" style="opacity: 1;">
+                            </picture>
+                        </div>
+                        <div class="slick-slide" index="4" style="width: 296px; position: relative; left: -1184px; top: 0px; z-index: 800; opacity: 0;">
+                            <picture class="s33">
+                                <source media="(max-width:959px)" srcset="images/siba-196.png 1x, images/siba-392.png 2x">
+                                <source media="(min-width:960px)" srcset="images/siba-486-1.png 1x">
+                                <img class="slide4 s36" src="images/siba-196.png" style="opacity: 1;">
+                            </picture>
+                        </div>
+                        <div class="slick-slide" index="5" style="width: 296px; position: relative; left: -1480px; top: 0px; z-index: 800; opacity: 0;">
+                            <picture class="s33">
+                                <source media="(max-width:959px)" srcset="images/mustang-pump-clip-195.png 1x, images/mustang-pump-clip-391.png 2x">
+                                <source media="(min-width:960px)" srcset="images/mustang-pump-clip-486-1.png 1x, images/mustang-pump-clip-972-1.png 2x">
+                                <img class="slide5 s35" src="images/mustang-pump-clip-195.png" style="opacity: 1;">
+                            </picture>
+                        </div>
+                        <div class="slick-slide" index="6" style="width: 296px; position: relative; left: -1776px; top: 0px; z-index: 800; opacity: 0;">
+                            <picture class="s33">
+                                <source media="(max-width:959px)" srcset="images/med-barn-296-2.png 1x, images/med-barn-592-2.png 2x">
+                                <source media="(min-width:960px)" srcset="images/med-barn-486-1.png 1x, images/med-barn-972-1.png 2x">
+                                <img class="slide6 s37" src="images/med-barn-296-2.png" style="opacity: 1;">
+                            </picture>
+                        </div>
+                        <div class="slick-slide" index="7" style="width: 296px; position: relative; left: -2072px; top: 0px; z-index: 800; opacity: 0;">
+                            <picture class="s33">
+                                <source media="(max-width:959px)" srcset="images/gladiator-pump-clip-195.png 1x, images/gladiator-pump-clip-391.png 2x">
+                                <source media="(min-width:960px)" srcset="images/gladiator-pump-clip-486-1.png 1x, images/gladiator-pump-clip-972-1.png 2x">
+                                <img class="slide7 s35" src="images/gladiator-pump-clip-195.png" style="opacity: 1;">
+                            </picture>
+                        </div>
+                        <div class="slick-slide" index="8" style="width: 296px; position: relative; left: -2368px; top: 0px; z-index: 900; opacity: 0; transition: opacity 1750ms linear 0s;">
+                            <picture class="s33">
+                                <source media="(max-width:959px)" srcset="images/corsair-pump-clip-195.png 1x, images/corsair-pump-clip-391.png 2x">
+                                <source media="(min-width:960px)" srcset="images/corsair-pump-clip-486-1.png 1x, images/corsair-pump-clip-972-1.png 2x">
+                                <img class="slide8 s35" src="images/corsair-pump-clip-195.png" style="opacity: 1;">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+@-webkit-keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -2000px;
+    }
+}
+
+@-moz-keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -2000px;
+    }
+}
+
+@-ms-keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+    
+    100% {
+        margin-left: -2000px;
+    }
+}
+
+@-o-keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -2000px;
+    }
+}
+
+    -webkit-animation: bannermove 5s linear infinate;
+    -moz-animation: bannermove 5s linear infinate;
+    -ms-animation: bannermove 5s linear infinate;
+    -o-animation: bannermove 5s linear infinate;

@@ -1,0 +1,446 @@
+/* REMINDERS */
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+/* ------------------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------------------ */
+
+* {
+    margin: 0;
+    Padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #000000;
+    font-family: 'Agency FB', arial;
+    font-size: 20px;
+}
+
+
+
+/* ------------------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------ */
+
+/* ------ HEADINGS ---- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+/* ------ GENERIC LINKS ------ */
+
+a:link,
+a:visited {
+    color: #ededed;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #c7800e;
+    border-bottom: 1px solid #c7800e;
+}
+
+/* ------ BUTTONS ------ */
+
+.btn:link, 
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.shop-btn:link,
+.shop-btn:visited,
+input[type=submit] {
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #000000;
+}
+
+.shop-btn:hover,
+.shop-btn:active {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/* ------------------------------------ */
+/* HEADER */
+/* ------------------------------------ */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/timothy-dykes-beer.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ededed;
+}
+
+.nav-logo {
+    height: 80px;
+    width: auto;
+    float: left;
+    border-radius: 25px;
+    margin: 10px 10px;
+}
+
+/* Main Navi */
+.main-nav {
+    float: left;
+    list-style: none;
+    margin-top: 25px;
+    margin-right: 20px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-size: 200%;
+}
+
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: #ededed;
+}
+
+/* Slider */
+.front-page {
+    position: relative;
+    width: 100vw;
+}
+
+.tagline {
+    margin-top: 150px;
+    display: block;
+    float:left;
+}
+
+.shop-btn {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.slider-container {
+    display: block;
+    float: right;
+    margin-top: 50px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.cog {
+    position: absolute;
+}
+
+.cog img { width: 400px; float: left; }
+    
+.cog {
+    animation-name: spin;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.slider {
+    height: 400px;
+    width: 2800px;
+}
+
+.slider img { 
+    width: 300px; 
+    float: left;
+    margin: 50px;
+}
+
+.slider {
+    animation-name: bannermove;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(7, end);
+}
+
+@keyframes bannermove {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: -2800px;
+    }
+}
+
+/* ------------------------------------ */
+/* ABOUT */
+/* ------------------------------------ */
+
+.section-about {
+    width: 1000px;
+    margin: 100px auto;
+    height: 400px;
+}
+
+.section-about h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-about .about-text {
+    display: inline-block;
+    text-align: justify;
+    width: 480px;
+    font-family: "Roboto Condensed";
+    font-weight: 100;
+}
+
+.section-about .about-map{
+    display: inline-block;
+    float: right;
+    height: 400px;
+    width: 500px;
+}
+
+#map {
+    height: 300px;
+    width: 500px;
+}
+
+/* ------------------------------------ */
+/* Beers */
+/* ------------------------------------ */
+
+.section-beers {
+    padding: 0;
+    background-image: url(img/nikola-jovanovic-pub.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.beers-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.beers-showcase li {
+    display: block;
+    float: left;
+    width: 33%;
+}
+
+.beer-image {
+    position: relative;
+    width = 100%;
+    margin: 0 40px;
+    overflow: hidden;
+}
+
+.beer-image img {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.beer-image:hover img {
+    opacity: 0.5;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.beer-image div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 10%;
+    left: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    opacity: 0;
+    visibility: hidden; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.beer-image p {
+    text-align: center;
+    font-family: "Roboto Condensed";
+}
+
+.beer-image:hover div {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* ------------------------------------ */
+/* News */
+/* ------------------------------------ */
+
+.section-news {
+    background-color: #fff;
+    text-align: center;
+    height: 400px;
+    margin: 25px 10px;
+}
+
+.section-news h2 {
+    padding: 20px; 180px;
+}
+
+.news-text {
+    display: block;
+    width: 38vw;
+    float: left;
+    margin: 0 5vw;
+}
+
+.news-text p {
+    margin-bottom: 40px;
+}
+
+.news-text h3 {
+    margin-bottom: 40px;
+}
+.news-apps img {
+    height: 120px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.fb-page {
+    display: block;
+    width: 38vw; 
+    height: 400px;
+    float: right;
+    margin: 0 5vw;
+}
+
+/* ------------------------------------ */
+/* Mates */
+/* ------------------------------------ */
+
+.section-mates {
+    background-color: #ededed;
+    height: 130vh;
+    text-align: center;
+}
+
+.section-mates h2 {
+    padding: 20px;
+}
+
+.mates-gallery {
+    width: 92vw;
+    margin: auto;
+}
+
+.mate-box {
+    display: block;
+    float: left;
+    width: 23vw;
+    height: auto;
+}
+
+.mate-box img {
+    width: 100%;
+}
+
+.mate-box .mate-text {
+    visibility: hidden;
+    width: 23vw;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    cursor: pointer;
+    
+    position: absolute;
+    z-index: 1;
+}
+
+.mate-box:hover .mate-text {
+    visibility: visible;
+}
+
+/* ------------------------------------ */
+/* Contact */
+/* ------------------------------------ */
+
+.section-contact {
+    background-color: #fff;
+    height: 400px;
+    text-align: center;
+}
+
+.section-contact h2 {
+    padding: 20px;
+}
+
+/* -------------------------------- */
+/* FOOTER */
+/* -------------------------------- */
+
+footer {
+    background-color: #b1b114;
+    color: #fff;
+}
+
+.footer-icons {
+    float: right;
+    font-size: 150%;
+}
