@@ -346,6 +346,7 @@ header span {
 .online li {
     list-style: none;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .online {
@@ -416,10 +417,12 @@ header span {
     height: 200px;
     width: 200px;
     color: #b4b4b4;
+    cursor: pointer;
 }
 
 #certificate:hover {
-    transform: scale(3);
+    transform: scale(2.5);
+    cursor: pointer;
 }
 
 #certificate.msc { background-image: url(img/qualifications/uwe_watermark-min.jpg); }
