@@ -1,19 +1,256 @@
 /* Big tablet to small computers */
 @media only screen and (max-width: 1200px) {
-    
+
+    /* HEADER */
+    .slider-container {
+        width: 48vh;
+    }
+
+    .cog img { width: 48vh; float: left; }
+
+    .slider {
+        height: 48vh;
+        width: 336vh;
+    }
+
+    .slider img { 
+        width: 36vh; 
+        margin: 6vh;
+    }
+
+    @keyframes bannermove {
+        to {
+            margin-left: -336vh;
+        }
+    }
 }
 
 /* Height of iPad is 1024px so covers range of tablet positions */
 @media only screen and (max-width: 1023px) {
     
+    /* HEADER */
+    .main-nav li {
+        display: inline-block;
+        margin-left: 40px;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        padding: 8px 0;
+        text-transform: uppercase;
+        font-size: 150%;
+    }
+    
+    .slider-container {
+        width: 32vh;
+    }
+
+    .cog img { width: 32vh; float: left; }
+
+    .slider {
+        height: 32vh;
+        width: 224vh;
+    }
+
+    .slider img { 
+        width: 24vh; 
+        margin: 4vh;
+    }
+
+    @keyframes bannermove {
+        to {
+            margin-left: -224vh;
+        }
+    }
+    
+    /* ABOUT */
+    .section-about {
+        width: 760px;
+        height: 700px;
+    }
+    
+    .section-about .about-text {
+        display: block;
+        margin: 0 auto;
+        text-align: justify;
+        width: 480px;
+        font-family: "Roboto Condensed";
+        font-weight: 100;
+    }
+
+    .section-about .about-map{
+        display: block;
+        margin: 20px auto 0 auto;
+        float: none
+    }
+
+    #map {
+        height: 300px;
+        width: 500px;
+    }
 }
 
 /* Width of the iPad is 768, so smaller than iPad tablet */
 @media only screen and (max-width: 767px) {
     
+    /* HEADER */
+    .main-nav { display: none; }
+    .mobile-nav-icon { display: inline-block;  }
+    .main-nav {
+        float: right;
+        margin-top: 17vh;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%
+    }
+    
+    .front-page {
+        position: relative;
+        width: 100vw;
+        display: flex;
+        flex-flow: column;
+        height: 70vh;
+    }
+ 
+    .tagline {
+        display: block;
+        float:left;
+        margin: 20vh auto;
+        text-align: center;
+    }
+
+    .shop-btn {
+        margin-top: 5vh;
+        margin: 5vh auto 0 auto;
+    }
+    
+    .slider-container {
+        display: none;
+        margin: 0 auto;
+    }
+    
+    .slider-container {
+        display: none;
+        width: 32vh;
+    }
+
+    .cog img { width: 32vh; float: left;         display: none;}
+
+    .slider {
+        display: none;
+        height: 32vh;
+        width: 224vh;
+    }
+
+    .slider img {
+        display: none;
+        width: 24vh; 
+        margin: 4vh;
+    }
+
+    @keyframes bannermove {
+        to {
+            margin-left: -224vh;
+        }
+    } 
+    
+    /* ABOUT */
+    .section-about {
+        width: 450px;
+        height: 700px;
+    }
+    
+    .section-about .about-text {
+        display: block;
+        margin: 0 auto;
+        text-align: justify;
+        width: 450px;
+        font-family: "Roboto Condensed";
+        font-weight: 100;
+    }
+
+    .section-about .about-map{
+        display: block;
+        margin: 20px auto 0 auto;
+        float: none
+    }
+
+    #map {
+        height: 300px;
+        width: 450px;
+    }
 }
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
     
+    /* HEADER */
+    h1 {
+        font-size: 200%;
+    }
+    
+    .nav-bar {
+        height: 15vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-logo {
+        height: 12vh;
+        width: auto;
+        float: right;
+        margin-left: 20px;
+        border-radius: 25px;
+    }
+    
+    /* ABOUT */
+    .section-about {
+        width: 90vw;
+        height: auto;
+    }
+    
+    .section-about .about-text {
+        display: block;
+        margin: 0 auto;
+        text-align: justify;
+        width: 90vw;
+        font-family: "Roboto Condensed";
+        font-weight: 100;
+        font-size: 90%;
+    }
+
+    .section-about .about-map{
+        display: none;
+        margin: 20px auto 0 auto;
+        float: none;
+    }
+    
+    .map-icon {
+        display: block;
+        font-size: 20vw;
+        margin-left: 35vw;
+        margin-top: 40px;
+    }
+    
+    #about a:link,
+    #about a:visited {
+        color: #393939;
+        padding-bottom: 1px;
+        border-bottom: none;
+    }
+
+    #about a:hover,
+    #about a:active {
+        color: #c7800e;
+        border-bottom: none;
+    }
 }

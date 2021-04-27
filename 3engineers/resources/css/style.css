@@ -114,7 +114,8 @@ header {
 .nav-logo {
     height: 15vh;
     width: auto;
-    float: left;
+    float: right;
+    margin-left: 20px;
     border-radius: 25px;
 }
 
@@ -125,6 +126,7 @@ header {
     list-style: none;
     text-shadow: 4px 4px 4px #aaa;
     margin-left: auto;
+    margin-right: 5vw;
 }
 
 .main-nav li {
@@ -141,9 +143,7 @@ header {
 
 /* Mobile navi */
 .mobile-nav-icon {
-    float: right;
-    margin-top: 30px;
-    margin-right: 20px;
+    margin: 0 20px 0 auto;
     cursor: pointer;
     display: none;
 }
@@ -264,6 +264,11 @@ header {
 #map {
     height: 300px;
     width: 500px;
+}
+
+.map-icon {
+    display: none;
+    margin: auto;
 }
 
 /* ------------------------------------ */

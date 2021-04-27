@@ -29,5 +29,13 @@ $(document).ready(function() {
         .end()
         .appendTo(".slider");
     }, 3000);
+   
     
+    /* Mobile nav */
+    
+    $('.js--nav-icon').click(function() {
+        var nav = $('.main-nav');
+        
+        nav.slideToggle(200);
+    });
 });
