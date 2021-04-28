@@ -23,6 +23,9 @@
             margin-left: -336vh;
         }
     }
+    
+    /* BEERS */
+    .beer-image div { font-size: 90% }
 }
 
 /* Height of iPad is 1024px so covers range of tablet positions */
@@ -88,6 +91,9 @@
         height: 300px;
         width: 500px;
     }
+    
+    /* BEERS */
+    .beer-image div { font-size: 70% }
 }
 
 /* Width of the iPad is 768, so smaller than iPad tablet */
@@ -188,6 +194,106 @@
         height: 300px;
         width: 450px;
     }
+    
+    /* BEERS */
+    .section-beers {
+        padding: 0;
+        background-image: url(img/nikola-jovanovic-pub.jpg);
+        height: 190vw;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gear-mesh {
+        width: 100vw;
+        margin: 0 2vw;
+    }
+
+    .beers-showcase {
+        position: relative;
+        list-style: none;
+        width: 100vw;
+    }
+
+    .beers-top {
+        margin-top: 3vw;
+    }
+
+    .beers-middle {
+        margin-left: 0;
+        margin-top: 0vw;
+    }
+
+    .beers-bottom {
+        margin-top: 0vw;
+    }
+
+    .beers-showcase li {
+        display: inline;
+        float: left;
+    }
+
+    .beer-image {
+        position: relative;
+        display: flex;
+        background: black;
+        color: white;
+        margin-left: 10vw;
+        margin-bottom: 5px;
+        opacity: 0.8;
+        width: 80vw;
+        border-radius: 15vw;
+        overflow: hidden;
+    }
+
+    .l_hand { margin-right: 0vw; }
+
+    .beer-image img {
+        opacity: 1;
+        width: 30vw;
+        height: 30vw;
+        transition: transform 0.5s, opacity 0.5s;
+    }
+
+    .beer-image:hover img {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .beer-image div {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 5.5%;
+        left: 0%;
+        background: black;
+        color: white;
+        margin-bottom: 5px;
+        opacity: 0.5;
+        visibility: visible; 
+        transition: visibility 0s, opacity 0.5s linear;
+        align-items: center;
+        width: 50vw;
+        height: 30vw;
+        margin: auto;
+        border-radius: 0vw;
+        padding: 8px 30px 8px 0;
+        cursor: pointer;
+        font-size: 75%;
+    }
+
+    .beer-image p {
+        text-align: center;
+        font-family: "Roboto Condensed";
+    }
+
+    .beer-image:hover {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 /* Small phones: from 0 to 480px */
@@ -253,4 +359,7 @@
         color: #c7800e;
         border-bottom: none;
     }
+    
+    /* BEERS */
+    .beer-image div { font-size: 45% }
 }

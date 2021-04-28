@@ -278,7 +278,7 @@ header {
 .section-beers {
     padding: 0;
     background-image: url(img/nikola-jovanovic-pub.jpg);
-    height: 100vh;
+    height: 75vw;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -287,7 +287,8 @@ header {
 }
 
 .gear-mesh {
-    width: 118vh;
+    width: 100vw;
+    margin: 0 2vw;
 }
 
 .beers-showcase {
@@ -297,30 +298,30 @@ header {
 }
 
 .beers-top {
-    margin-top: 4vh;
+    margin-top: 3vw;
 }
 
 .beers-middle {
-    margin-left: 26vh;
-    margin-top: 30vh;
+    margin-left: 19.5vw;
+    margin-top: 22.5vw;
 }
 
 .beers-bottom {
-    margin-top: 56vh;
+    margin-top: 42vw;
 }
 
 .beers-showcase li {
     display: block;
     float: left;
-    margin-right: 4vh;
 }
 
 .beer-image {
     position: relative;
-    width: 40vh;
-    margin: 0 4vh;
+    width: 30vw;
     overflow: hidden;
 }
+
+.l_hand { margin-right: 9vw; }
 
 .beer-image img {
     opacity: 1;
@@ -346,6 +347,13 @@ header {
     opacity: 0;
     visibility: hidden; 
     transition: visibility 0s, opacity 0.5s linear;
+    align-items: center;
+    width: 86%;
+    height: 86%;
+    margin: auto;
+    border-radius: 15vw;
+    padding: 8px 15px;
+    cursor: pointer;
 }
 
 .beer-image p {
@@ -354,16 +362,8 @@ header {
 }
 
 .beer-image:hover div {
-    display: flex;
-    align-items: center;
-    width: 86%;
-    height: 86%;
-    margin: auto;
-    border-radius: 20vh;
-    padding: 8px 15px;
     visibility: visible;
     opacity: 0.7;
-    cursor: pointer;
 }
 
 /* ------------------------------------ */
