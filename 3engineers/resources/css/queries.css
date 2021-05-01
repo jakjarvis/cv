@@ -26,6 +26,11 @@
     
     /* BEERS */
     .beer-image div { font-size: 90% }
+    
+    /* NEWS */
+    .news-apps img {
+        height: 110px;
+    }
 }
 
 /* Height of iPad is 1024px so covers range of tablet positions */
@@ -94,6 +99,38 @@
     
     /* BEERS */
     .beer-image div { font-size: 70% }
+    
+    /* NEWS */
+    .section-news {
+        height: 400px;
+        margin: 100px 10px;
+    }
+
+    .news-text {
+        margin: 0 2vw;
+    }
+
+    .news-text p {
+        margin-bottom: 20px;
+    }
+
+    .news-text h3 {
+        margin-bottom: 20px;
+    }
+
+    .news-apps img {
+        height: 80px;
+    }
+    
+    /* MATES */
+    
+    .pub-box .pub-text {
+        font-size: 60%;
+    }
+
+    .mate-box .mate-text {
+        font-size: 40%;
+    }
 }
 
 /* Width of the iPad is 768, so smaller than iPad tablet */
@@ -294,6 +331,86 @@
         visibility: visible;
         opacity: 1;
     }
+    
+    /* NEWS */
+    
+    .section-news {
+        height: 700px;
+        margin: 50px 10px;
+    }
+    
+    .news-text {
+        width: 90vw;
+    }
+    
+    .fb-window {
+        display: block;
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    .fb-page {
+        display: block;
+        width: 400px; 
+        height: 400px;
+        margin: 10px auto 0 auto;
+    }
+    
+    /* MATES */
+    
+    .section-mates {
+        background-color: #ededed;
+        text-align: center;
+        padding: 50px 0;
+        height: auto;
+    }
+
+    .section-mates h2 {
+        height: 5vw;
+    }
+
+    .pubs-gallery {
+        display: inline-block;
+        width: 52.5vw;
+        margin: 30px 0;
+    }
+
+    .pub-box {
+        display: block;
+        float: left;
+        width: 52.5vw;
+        height: auto;
+        margin: 0.5vw;
+    }
+
+    .mates-gallery {
+        display: inline-block;
+        width: 30vw;
+        margin: 0 0 0 10px;
+    }
+
+    .mate-box {
+        display: block;
+        float: left;
+        width: 30vw;
+        height: auto;
+        margin: 0.5vw;
+    }
+
+    .box img {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .pub-box .pub-text {
+        width: 52vw;
+        font-size: 80%;
+    }
+
+    .mate-box .mate-text {
+        width: 30vw;
+        font-size: 60%;
+    }
 }
 
 /* Small phones: from 0 to 480px */
@@ -361,5 +478,20 @@
     }
     
     /* BEERS */
+    .section-beers { height: 200vw; }
+        
     .beer-image div { font-size: 45% }
+    
+    /* NEWS */
+    
+    .section-news {
+        height: 800px;
+        margin: 50px 10px;
+    }
+    
+    .news-text { font-size: 80%; }
+    
+    /* CONTACT */
+    
+    .section-contact p { font-size: 70%; }
 }

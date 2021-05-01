@@ -395,6 +395,7 @@ header {
 .news-text h3 {
     margin-bottom: 40px;
 }
+
 .news-apps img {
     height: 120px;
     margin: 10px;
@@ -402,11 +403,10 @@ header {
 }
 
 .fb-page {
-    display: block;
     width: 38vw; 
     height: 400px;
     float: right;
-    margin: 0 5vw;
+    margin: 0 auto;
 }
 
 /* ------------------------------------ */
