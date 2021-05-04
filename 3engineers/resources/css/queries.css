@@ -345,6 +345,7 @@
     
     .fb-window {
         display: block;
+        float: center;
         width: 400px;
         margin: 0 auto;
     }
@@ -486,10 +487,16 @@
     
     .section-news {
         height: 800px;
-        margin: 50px 10px;
+        margin: 50px 0px;
     }
     
     .news-text { font-size: 80%; }
+        
+    .fb-page {
+        width: 400px; 
+        height: 400px;
+        margin: 10px auto 0 auto;
+    }
     
     /* CONTACT */
     
