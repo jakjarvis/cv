@@ -38,8 +38,11 @@
     
     /* HEADER */
     
+    #main-nav { display: block; }
+    
     .slider-container {
         width: 32vh;
+        margin: 0 auto 0 auto;
     }
 
     .cog img { width: 32vh; float: left; }
@@ -63,7 +66,7 @@
     /* ABOUT */
     .section-about {
         width: 760px;
-        height: 700px;
+        height: 750px;
     }
     
     .section-about .about-text {
@@ -91,8 +94,8 @@
     
     /* NEWS */
     .section-news {
-        height: 400px;
-        margin: 100px 10px;
+        height: 500px;
+        margin: 000px 10px 100px;
     }
 
     .news-text {
@@ -136,49 +139,41 @@
     }
     
     .nav-logo {
-        height: 15vw;
+        height: 100px;
     }
     
-    /* Style the navigation menu */
-    .topnav {
-        overflow: hidden;
-        position: relative;
-        padding-top: 12vw;
-    }
-
-    /* Hide the links inside the navigation menu (except for logo/home) */
-    .topnav #nav-links {
-        display: none;
-        margin-right: 2vw;
-    }
-
-    /* Style navigation menu links */
-    .topnav a {
-        padding: 5px 10px;
-        margin-left: 40vw;
-        width: 13vw;
-        text-decoration: none;
-        font-size: 3vw;
-        display: block;
-        float: right;
-        text-align: center;
-    }
-
-    /* Style the hamburger menu */
-    .topnav .nav-icon {
-        display: block;
-        position: absolute;
-        font-size: 6vw;
-        right: 2vw;
-        top: 6vw;
+    #main-nav { display: none; }
+    .mobile-nav-icon { display: inline-block; }
+    
+    #main-nav {
+        float: left;
+        margin-top: 20px;
+        right: 10vw;
+        text-align: left;
     }
     
-    .nav-icon a:hover,
-    .nav-icon a:active {
-        color: #c7800e;
-        border-bottom: none;
+    #main-nav li {
+        display: block;
+    }
+    
+    #main-nav li a:link,
+    #main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%
     }
  
+    .sticky .mobile-nav-icon {
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+    
+    .sticky .mobile-nav-icon i {
+        font-size: 200%;
+        color: #000;
+    }
+    
     .tagline {
         display: block;
         float:left;
@@ -193,12 +188,6 @@
     
     .slider-container {
         display: none;
-        margin: 0 auto;
-    }
-    
-    .slider-container {
-        display: none;
-        width: 32vh;
     }
 
     .cog img { display: none;}
@@ -220,7 +209,7 @@
     /* ABOUT */
     .section-about {
         width: 450px;
-        height: 700px;
+        height: 750px;
     }
     
     .section-about .about-text {
@@ -247,7 +236,7 @@
     .section-beers {
         padding: 0;
         background-image: url(img/nikola-jovanovic-pub.jpg);
-        height: 190vw;
+        height: 200vw;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -267,16 +256,16 @@
     }
 
     .beers-top {
-        margin-top: 3vw;
+        margin-top: 13vw;
     }
 
     .beers-middle {
         margin-left: 0;
-        margin-top: 0vw;
+        margin-top: 10vw;
     }
 
     .beers-bottom {
-        margin-top: 0vw;
+        margin-top: 10vw;
     }
 
     .beers-showcase li {
@@ -346,8 +335,8 @@
     /* NEWS */
     
     .section-news {
-        height: 700px;
-        margin: 50px 10px;
+        height: 900px;
+        margin: 0px 10px;
     }
     
     .news-text {
@@ -373,7 +362,7 @@
     .section-mates {
         background-color: #ededed;
         text-align: center;
-        padding: 50px 0;
+        padding: 100px 0;
         height: auto;
     }
 
@@ -476,9 +465,22 @@
     }
     
     /* BEERS */
-    .section-beers { height: 200vw; }
+    .section-beers { height: 230vw; }
         
     .beer-image div { font-size: 45% }
+    
+    .beers-top {
+        margin-top: 23vw;
+    }
+
+    .beers-middle {
+        margin-left: 0;
+        margin-top: 20vw;
+    }
+
+    .beers-bottom {
+        margin-top: 20vw;
+    }
     
     /* NEWS */
     
