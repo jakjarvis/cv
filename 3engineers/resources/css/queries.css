@@ -37,17 +37,6 @@
 @media only screen and (max-width: 1023px) {
     
     /* HEADER */
-    .main-nav li {
-        display: inline-block;
-        margin-left: 40px;
-    }
-    
-    .main-nav li a:link,
-    .main-nav li a:visited {
-        padding: 8px 0;
-        text-transform: uppercase;
-        font-size: 150%;
-    }
     
     .slider-container {
         width: 32vh;
@@ -137,24 +126,6 @@
 @media only screen and (max-width: 767px) {
     
     /* HEADER */
-    .main-nav { display: none; }
-    .mobile-nav-icon { display: inline-block;  }
-    .main-nav {
-        float: right;
-        margin-top: 17vh;
-    }
-    
-    .main-nav li {
-        display: block;
-    }
-    
-    .main-nav li a:link,
-    .main-nav li a:visited {
-        display: block;
-        border: 0;
-        padding: 10px 0;
-        font-size: 100%
-    }
     
     .front-page {
         position: relative;
@@ -162,6 +133,50 @@
         display: flex;
         flex-flow: column;
         height: 70vh;
+    }
+    
+    .nav-logo {
+        height: 15vw;
+    }
+    
+    /* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        position: relative;
+        padding-top: 12vw;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #nav-links {
+        display: none;
+        margin-right: 2vw;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        padding: 5px 10px;
+        margin-left: 40vw;
+        width: 13vw;
+        text-decoration: none;
+        font-size: 3vw;
+        display: block;
+        float: right;
+        text-align: center;
+    }
+
+    /* Style the hamburger menu */
+    .topnav .nav-icon {
+        display: block;
+        position: absolute;
+        font-size: 6vw;
+        right: 2vw;
+        top: 6vw;
+    }
+    
+    .nav-icon a:hover,
+    .nav-icon a:active {
+        color: #c7800e;
+        border-bottom: none;
     }
  
     .tagline {
@@ -186,18 +201,14 @@
         width: 32vh;
     }
 
-    .cog img { width: 32vh; float: left;         display: none;}
+    .cog img { display: none;}
 
     .slider {
         display: none;
-        height: 32vh;
-        width: 224vh;
     }
 
     .slider img {
         display: none;
-        width: 24vh; 
-        margin: 4vh;
     }
 
     @keyframes bannermove {
@@ -420,20 +431,6 @@
     /* HEADER */
     h1 {
         font-size: 200%;
-    }
-    
-    .nav-bar {
-        height: 15vh;
-        display: flex;
-        align-items: center;
-    }
-    
-    .nav-logo {
-        height: 12vh;
-        width: auto;
-        float: right;
-        margin-left: 20px;
-        border-radius: 25px;
     }
     
     /* ABOUT */
