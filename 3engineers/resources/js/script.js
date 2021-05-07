@@ -30,7 +30,7 @@ $(document).ready(function() {
         .appendTo(".slider");
     }, 3000);  
     
-    /* Mobile nav */
+    /* Mobile nav
     $('.js--nav-icon').click(function() {
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon i');
@@ -43,10 +43,10 @@ $(document).ready(function() {
             icon.addClass('fa-bars');
             icon.removeClass('fa-times-circle-o');
         }
-    });
+    }); */
    
     
-    /* Sticky nav */  
+    /* Sticky nav */
     $('.js--section-about').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
