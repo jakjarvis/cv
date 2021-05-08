@@ -176,7 +176,7 @@
     
     .tagline {
         display: block;
-        float:left;
+        float: bottom;
         margin: 20vh auto;
         text-align: center;
     }
