@@ -30,7 +30,7 @@ $(document).ready(function() {
         .appendTo(".slider");
     }, 3000);  
     
-    /* Mobile nav
+    /* Mobile nav 
     $('.js--nav-icon').click(function() {
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon i');

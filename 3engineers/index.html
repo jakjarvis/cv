@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <!--<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>-->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
         
     
         <!-- Links to all the font references -->
@@ -37,7 +37,7 @@
                 <div class="row">
                     <img src="resources/img/logo-inv.png" alt="Jono" class="nav-logo" href="#home">
                     <img src="resources/img/logo-trans.png" alt="Jono" class="nav-logo-black" href="#home">
-                    <p>v3</p>
+                    <p>v4</p>
                     <ul id="main-nav" class="js--main-nav">
                         <li><a href="#about">About us</a></li>
                         <li><a href="#beers">Beers</a></li>
@@ -240,33 +240,8 @@
                 icon.addClass('fa-bars');
                 icon.removeClass('fa-times-circle-o');
             }
-        })
-        
-        $('.js--section-about').waypoint(function(direction) {
-            if (direction == "down") {
-                $('nav').addClass('sticky');
-            } else { 
-                $('nav').removeClass('sticky');
-            }
-        }, {
-            offset: '60px;'
-        })
-        
-        $(window).resize(function(){
-            var nav = $('.js--main-nav');
-            var icon = $('.js--nav-icon i');
-
-            if ($(window).width() > 767){
-                nav.css("display", "block");
-                icon.addClass('ion-close-round');
-                icon.removeClass('ion-navicon-round');
-            } else {
-                nav.css("display", "none");
-                icon.addClass('ion-navicon-round');
-                icon.removeClass('ion-close-round');
-            }
         })</script>
-        
+                
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
         <script src="https://use.fontawesome.com/eb0dd1db7e.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script>
